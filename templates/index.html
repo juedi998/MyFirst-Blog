@@ -1,0 +1,528 @@
+
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home - Moderna</title>
+    <meta name="description" content="Moderna Responsive HTML5 Template" />
+    <meta name="author" content="pixel-industry" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico' %}" />
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico'%}" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{% static 'css/960_12_col.css'%}" media="screen" />
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}" media="screen" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" media="screen" />
+    <link rel="stylesheet" href="{% static 'css/anythingslider.css' %}" />
+    <link rel="stylesheet" title="activestyle" href="{% static 'css/default-blue.css' %}" media="screen" /> <!--default blue color style-->
+    <link rel="stylesheet" href="{% static 'style-switcher/styleSwitcher.css' %}" media="screen" />
+    
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="{% static 'css/ie7.css' %}" media="screen" />
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" href="{% static 'css/ie8.css' %}" media="screen" />
+    <![endif]-->
+    <!--[if IE 9]>
+    <link rel="stylesheet" href="{% static 'css/ie9.css' %}" media="screen" />
+    <![endif]-->
+    
+    <!--[if lt IE 9]>
+        <script src="{% static 'js/html5shiv.js' %}"></script>
+    <![endif]-->
+
+    <!-- google web fonts -->
+    <link href='http//fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css' />
+    <link href='http//fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css' />
+    <link href='http//fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
+    <link href='http//fonts.googleapis.com/css?family=Advent+Pro:400,300,100,200' rel='stylesheet' type='text/css' />
+
+    <!-- js files -->
+    <script src="{% static 'js/jquery-1.7.2.js' %}"></script> <!-- jQuery 1.7.2 -->
+    <script src="{% static 'js/jquery.tweetscroll.js' %}"></script> <!-- jQuery tweetscroll plugin -->
+    <script src="{% static 'js/socialstream.jquery.js' %}"></script> <!-- Social Networks Feeds -->
+    <script src="{% static 'js/jquery.easing.1.2.js' %}"></script><!-- Anything Slider optional plugins -->
+    <script src="{% static 'js/jquery.anythingslider.min.js' %}"></script><!-- Anything Slider -->
+    <script src="{% static 'js/jquery.anythingslider.fx.min.js' %}"></script><!-- Anything Slider optional FX extension -->
+    <script src="{% static 'js/jquery.carouFredSel-5.6.4-packed.js'%}"></script><!-- CarouFredSel carousel plugin -->
+    <script src="{% static 'js/modernizr.custom.32962.js' %}"></script><!-- Modernizr plugin -->
+    <script src="{% static 'js/jquery.placeholder.min.js' %}"></script><!-- jQuery Placeholder plugin -->
+    <script src="{% static 'js/portfolio.js' %}"></script> <!-- portfolio custom options -->
+    <script src="{% static 'js/include.js' %}"></script> <!-- jQuery custom options -->
+    <script src="{% static 'style-switcher/styleSwitcher.js' %}"></script><!-- Style Switcher plugin -->
+
+    <!-- end js files -->
+</head>
+
+<body>
+    <!-- header wrapper start -->
+    <section id="header-wrapper">
+
+        <!-- header start -->
+        <header id="header" class="clearfix">
+            <!-- logo start -->
+            <section id="logo">
+                <a href="index.html">
+                    logo
+                </a>
+            </section><!-- logo end -->
+
+            <!-- social icons start -->
+            <ul class="social">
+                <li class="dribble">
+                    <a href="#">dribble</a>
+                </li>
+
+                <li class="facebook">
+                    <a href="#">facebook</a>
+                </li>
+
+                <li class="pinterest">
+                    <a href="#">pinterest</a>
+                </li>
+
+                <li class="twitter">
+                    <a href="#">twitter</a>
+                </li>
+            </ul><!-- social icons end -->
+
+            <!-- main navigation container start -->
+            <section id="nav-container">
+
+                <!-- main navigation start  -->
+                <nav id="nav">
+                    <ul>
+                        <li class="active"><a href="/index/">首页</a></li>
+                        <li>
+                            <a href="/about">关于我</a>
+                        </li>
+                        <li>
+                            <a href="/blog">我的博客</a>
+
+                        </li>
+                        <li>
+                            <a href="#">作品赏析</a>
+                            <ul>
+                                <li><a href="/columns">平面设计作品赏析</a></li>
+                                <li><a href="/elements">网络爬虫</a></li>
+                                <li><a href="/media">我的音乐作品</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">联系我</a>
+                        </li>
+                    </ul>
+                </nav><!-- main navigation end -->
+
+                <!-- responsive navigation start -->
+                <select id="nav-responsive">
+                    <option selected="" value="" />Site Navigation...
+                    <option value="index.html" />Home
+                    <option value="about.html" />About
+                    <option value="about.html" />- About us
+                    <option value="services.html" />- Services
+                    <option value="portfolio3.html" />Portfolio
+                    <option value="portfolio2.html" />- Portfolio 2 col
+                    <option value="portfolio3.html" />- Portfolio 3 col
+                    <option value="portfolio4.html" />- Portfolio 4 col
+                    <option value="portfoliosingleshowcase.html" />- Portfolio with showcase
+                    <option value="portfoliosingle.html" />- Portfolio single
+                    <option value="portfoliosingle2.html" />- Portfolio single simple
+                    <option value="blog.html" />Blog
+                    <option value="blog.html" />- Blog
+                    <option value="blogsingle.html" />- Blog single
+                    <option value="elements.html" />Features
+                    <option value="columns.html" />- Columns
+                    <option value="elements.html" />- Elements
+                    <option value="media.html" />- Media
+                    <option value="contact-wide.html" />Contact
+                    <option value="contact-wide.html" />- Contact wide map
+                    <option value="contact-short.html" />- Contact short map
+                    <option value="contact.html" />- Contact no map
+                </select> <!-- responsive navigation end -->
+
+                <!-- search start -->
+                <section id="search">
+                    <form action="#" method="get" />
+                        <input id="search-bkg" type="text" placeholder="搜的一下我就喵了..." />
+                        <input id="search-submit" type="submit" />
+                    </form>
+                </section><!-- search end -->
+
+            </section><!-- main navigation container end -->
+
+        </header><!-- header end -->
+    </section><!-- header wrapper end -->
+
+    <!-- slider start -->
+    <article id="anything-slider">
+        <div class="shadow-top"></div>
+        <section id="slider-container">
+            <ul id="slides"> 
+                <li class="panel1"> 
+                    <section class="slide-elements"> 
+                        <div class="slide-img-container">
+                            <img src="{% static 'img/slider/slider1.jpg' %}" alt="Slider Image 1" />
+                            <div class="slider-img-shadow"></div>
+                        </div>
+                        <h3><span>{关于我}</span> | 李文峰</h3>
+
+                        <p>我是一名网络管理员，迄今为止我工作了6年有余，其中有四年是从事Web行业，两年是从事平面设计，我初中毕业，目前就读于广东科学技术职业学院《计算机网络技术专科》，我精通Windows、WinServer、Linux、MAC系统安装维护，熟悉如SharePoint等大型协同工作服务器的搭建与部署。</p>
+                        <a class="btn-big style-color" href="#">
+                            <span>Purchase theme</span>
+                        </a>
+                    </section> 
+                </li> 
+                <li class="panel2"> 
+                    <section class="slide-elements"> 
+                        <div class="slide-img-container img-float-right">
+                            <img src="{% static 'img/slider/slider2.jpg' %}" alt="Slider Image 2" />
+                            <div class="slider-img-shadow"></div>
+                        </div> 
+                        <h3><span>{我的技能}</span> | Widgets</h3>
+
+                        <p>我熟悉掌握 python 常用爬虫库的使用，并有良好的代码风格，基础扎实；常用数据库有：MySQL 及 MongoDB；使用过 Django 等框架开发过个人网页，擅长于计算机网络设备维护，网络防御等；同时也有 2 年的平面设计经验，配合 django 可以打造出相对较为完美的网页。</p>
+                        <a class="btn-big style-color" href="#">
+                            <span>Purchase theme</span>
+                        </a>
+                    </section> 
+                </li> 
+                <li class="panel3"> 
+                    <section class="slide-elements"> 
+                        <div class="slide-img-container">
+                            <img src="{% static 'img/slider/slider3.jpg' %}" alt="Slider Image 3" />
+                            <div class="slider-img-shadow"></div>
+                        </div>
+                        <blockquote>关于我的兴趣爱好：
+                            我的兴趣很广泛，我喜欢音乐、喜欢上网、喜欢玩游戏、喜欢爬山玩水、喜欢钓鱼、也喜欢打球，
+                            IT方面我喜欢编程、喜欢渗透、喜欢网络、喜欢物联，这一切都是我的兴趣之一，当然那并不仅仅
+                            只是兴趣而已，我会通过不断地努力学习、不断参与大型项目开发、设计以促使我快速成长，这仅仅
+                            是我对自己的一点小小的要求而已.</blockquote>
+
+                    </section> 
+                </li> 
+                <li class="panel4 slider-img-full">
+                    <section class="slide-elements"> 
+                        <div class="slide-img-container">
+                            <img src="{% static 'img/slider/slider4.jpg' %}" alt="Slider Image 4" />
+                            <div class="slider-img-shadow-full"></div>
+                        </div>
+                    </section>
+                </li>
+            </ul>
+        </section>
+        <div class="shadow-bottom"></div>
+    </article><!-- slider end -->
+
+    <!-- content wrapper start -->
+    <section id="content-wrapper">
+
+        <!-- container_12 start -->
+        <section class="container_12">      
+
+            <!-- services info start -->
+            <section class="grid_3 services-info">
+                <h6 class="title">我是一名职业威客</h6>
+                <p>这是我能为您做的事情，如果有需要，请与我联系，无需过多的考虑。 </p>
+                <a href="about.html" class="find-out-more">- Find out more -</a>
+            </section> <!-- services info end -->
+
+            <!-- services columns start -->
+            <ul class="services-wrap">
+                <li class="grid_3">
+                    <a class="icon icon3" href="services.html">service </a>
+                    <h6 class="title">网络数据采集</h6>
+                    <p>常用数据采集、数据入库，批量获取企业信息、批量获取微信、QQ、facebook或其他等等，的信息，我可以使用基于python开发的脚本为您实现，详情可参照我的博客。</p>
+                </li>
+
+                <li class="grid_3">
+                    <a class="icon icon2" href="services.html">service </a>
+                    <h6 class="title">网站建设与维护</h6>
+                    <p>我能为您架设基于Wordpress、Discuz、DedeCms等开源程序的网站，并提供售后服务，我常用Django作为开发语言可开发基于Django的Web网站（个人博客、商用站点等）。</p>
+                </li>
+
+                <li class="grid_3">
+                    <a class="icon icon1" href="services.html">service </a>
+                    <h6 class="title">视觉设计</h6>
+                    <p>我有2年的平面设计经验，可以为您做网页设计、名片设计、包装设计、图像处理以及大型海报、画册设计等等。</p>
+                </li>
+            </ul><!-- services columns end -->
+
+            <!-- ruler start -->
+            <hr class="ruler" /><!-- ruler end -->
+
+            <!-- portfolio carousel start -->
+            <section class="carousel grid_12">
+
+                <!-- section title start -->
+                <section class="grid_12 section-title">
+
+                    <!-- title start -->
+                    <h6>热门作品集</h6><!-- title end -->
+
+                    <!-- portfolio carousel navigation start -->
+                    <ul class="carousel-nav">
+                        <li>
+                            <a class="next" href="#"></a> 
+                        </li>
+
+                        <li>
+                            <a class="prev" href="#"></a>
+                        </li>
+                    </ul> <!-- portfolio carousel navigation end -->
+                </section><!-- section title end -->
+
+                <!-- portfolio items list start -->
+                <section class="jcarousellite">
+                    <ul class="carousel-li">
+                        <li>  
+                            <figure class="img-styled sliding">
+                                <div class="img-container">                   
+                                    <!-- img start -->
+                                    <img src="{% static 'img/portfolio/thumb/portfolio16.jpg' %}" width="220" alt="portfolio" /><!-- img end -->
+
+                                    <!-- img hover effect and lightbox start -->
+                                    <ul class="img-hover">
+                                        <li class="title">
+                                            <a href="portfoliosingle.html">Black and White</a>
+                                        </li>
+                                        <li class="portfolio-grid">
+                                            <a href="portfolio3.html">Grid</a>
+                                        </li>
+                                        <li class="portfolio-single">
+                                            <a href="portfoliosingle.html">Single</a>
+                                        </li>
+                                    </ul><!-- img hover effect and lightbox end -->
+                                </div>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure class="img-styled sliding">
+                                <div class="img-container">                   
+                                    <!-- img start -->
+                                    <img src="{% static 'img/portfolio/thumb/portfolio19.jpg' %}" width="220" alt="portfolio" /><!-- img end -->
+
+                                    <!-- img hover effect and lightbox start -->
+                                    <ul class="img-hover">
+                                        <li class="title">
+                                            <a href="portfoliosingle.html">Trust is Tricky</a>
+                                        </li>
+                                        <li class="portfolio-grid">
+                                            <a href="portfolio3.html">Grid</a>
+                                        </li>
+                                        <li class="portfolio-single">
+                                            <a href="portfoliosingle.html">Single</a>
+                                        </li>
+                                    </ul><!-- img hover effect and lightbox end -->
+                                </div>
+
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure class="img-styled sliding">
+                                <div class="img-container">                   
+                                    <!-- img start -->
+                                    <img src="{% static 'img/portfolio/thumb/portfolio17.jpg' %}" width="220" alt="portfolio" /><!-- img end -->
+
+                                    <!-- img hover effect and lightbox start -->
+                                    <ul class="img-hover">
+                                        <li class="title">
+                                            <a href="portfoliosingle.html">The Indian Girl</a>
+                                        </li>
+                                        <li class="portfolio-grid">
+                                            <a href="portfolio3.html">Grid</a>
+                                        </li>
+                                        <li class="portfolio-single">
+                                            <a href="portfoliosingle.html">Single</a>
+                                        </li>
+                                    </ul><!-- img hover effect and lightbox end -->
+                                </div>
+
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure class="img-styled sliding">
+                                <div class="img-container">                   
+                                    <!-- img start -->
+                                    <img src="{% static 'img/portfolio/thumb/portfolio3.jpg' %}" width="220" alt="portfolio" /><!-- img end -->
+
+                                    <!-- img hover effect and lightbox start -->
+                                    <ul class="img-hover">
+                                        <li class="title">
+                                            <a href="portfoliosingle.html">This Is Not The End</a>
+                                        </li>
+                                        <li class="portfolio-grid">
+                                            <a href="portfolio3.html">Grid</a>
+                                        </li>
+                                        <li class="portfolio-single">
+                                            <a href="portfoliosingle.html">Single</a>
+                                        </li>
+                                    </ul><!-- img hover effect and lightbox end -->
+                                </div>
+
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure class="img-styled sliding">
+                                <div class="img-container">                   
+                                    <!-- img start -->
+                                    <img src="{% static 'img/portfolio/thumb/portfolio2.jpg' %}" width="220" alt="portfolio" /><!-- img end -->
+
+                                    <!-- img hover effect and lightbox start -->
+                                    <ul class="img-hover">
+                                        <li class="title">
+                                            <a href="portfoliosingle.html">Future Cars</a>
+                                        </li>
+                                        <li class="portfolio-grid">
+                                            <a href="portfolio3.html">Grid</a>
+                                        </li>
+                                        <li class="portfolio-single">
+                                            <a href="portfoliosingle.html">Single</a>
+                                        </li>
+                                    </ul><!-- img hover effect and lightbox end -->
+                                </div>
+
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure class="img-styled sliding">
+                                <div class="img-container">                   
+                                    <!-- img start -->
+                                    <img src="{% static 'img/portfolio/thumb/portfolio5.jpg' %}" width="220" alt="portfolio" /><!-- img end -->
+
+                                    <!-- img hover effect and lightbox start -->
+                                    <ul class="img-hover">
+                                        <li class="title">
+                                            <a href="portfoliosingle.html">Daft Punk</a>
+                                        </li>
+                                        <li class="portfolio-grid">
+                                            <a href="portfolio3.html">Grid</a>
+                                        </li>
+                                        <li class="portfolio-single">
+                                            <a href="portfoliosingle.html">Single</a>
+                                        </li>
+                                    </ul><!-- img hover effect and lightbox end -->
+                                </div>
+
+                            </figure>
+                        </li>
+                    </ul>
+                </section>
+            </section><!-- portfolio items list end -->
+
+            <!-- note start -->
+            <section class="grid_12 note">
+                <!-- note text start -->
+                <span class="text">Hello, This is Moderna Theme. And This is Place Where You Will Introduce Yourself.</span><!-- note text end -->
+
+                <!-- button big start -->
+                <a href="#" class="btn-big style-color">
+                    <span>Purchase theme</span>
+                </a><!-- button big end -->
+            </section><!-- note end -->
+
+        </section><!-- container_12 end -->
+
+    </section><!-- content-wrapper end -->
+
+    <!-- footer start -->
+    <footer id="footer" class="clearfix">
+        <section class="container_12">
+            <div class="ruler"></div>
+
+            <!-- text article start -->
+            <article class="grid_3">
+                <h6>关于我</h6>
+                 <p>我是一名网络管理员，迄今为止我工作了6年有余，其中有四年是从事Web行业，两年是从事平面设计，我初中毕业，目前就读于广东科学技术职业学院《计算机网络技术专科》，我精通Windows、WinServer、Linux、MAC系统安装维护，熟悉如SharePoint等大型协同工作服务器的搭建与部署。</p>
+
+                <a href="about.html" class="find-out-more">- Find out more -</a>
+            </article><!-- text article end -->
+
+            <!-- tweeter feed start -->
+            <article class="grid_3 tweets-feed">
+                <h6>我的G+</h6>
+                <div class="tweets-list-container">
+                </div>
+            </article><!-- tweeter feed end -->
+
+            <!-- Pinterest feed start -->
+            <article class="grid_3 social-feed pinterest-feed">
+                <h6>我的Facebook</h6>
+            </article><!-- Pinterest feed end -->
+
+            <!-- contact section start -->
+            <article class="grid_3">
+                <h6>联系我</h6>
+                <p>地址: 广东省广州市番禺区钟村镇</p>
+                <br />
+                <p>QQ:1032705585/987789687</p>
+                <p>Phone: +86 1328 8846 324</p>
+                <br />
+                <a href="#">E-mail: juedi12020@gmail.com</a>
+            </article><!-- contact section end -->
+
+            <div class="ruler bottom"></div>
+        </section>
+
+        <!-- copyright start -->
+        <section class="container_12 clearfix">
+            <section class="copyright">
+                <p>&copy; Copyright &copy; 2016.NarutoLee个人网站保留所有权限.<a target="_blank" href="/blog">我的博客</a></span></p>
+                <a class="to-top-link"><img src="{% static 'img/to-top.png' %}" class="to-top" alt="back to top" /></a>
+            </section>
+        </section><!-- copyright end -->
+    </footer><!-- footer end -->
+
+    <script>
+        $(function(){
+            $('#slides') // Using FX base effects 
+            .anythingSlider({ 
+                resizeContents      : true, 
+                expand              : true,
+                buildArrows         : true,  
+                buildNavigation     : true,
+                buildStartStop      : false,
+                autoPlay            : false,
+                delay: 5000
+            }) 
+            .anythingSliderFx({ 
+                // base FX definitions 
+                // '.selector' : [ 'effect(s)', 'size', 'time', 'easing' ] 
+                // 'size', 'time' and 'easing' are optional parameters, but must be kept in order if added 
+              
+                '.panel1 .slide-img-container'  : [ 'left', '1040px', '1000', 'easeOutCirc' ],
+                '.panel1 h3'  : [ 'right', '640px', '500', 'easeInOutCirc' ],
+                '.panel1 p'  : [ 'right', '640px', '1000', 'easeInOutCirc' ],
+                '.panel1 a'  : [ 'right', '640px', '1200', 'easeInOutCirc' ],
+                '.panel2 .slide-img-container'  : [ 'bottom', '1040px', '1000', 'easeOutCirc' ],
+                '.panel2 h3'  : [ 'top', '640px', '500', 'easeInOutCirc' ],
+                '.panel2 p'  : [ 'top', '640px', '1000', 'easeInOutCirc' ],
+                '.panel2 a'  : [ 'top', '840px', '1200', 'easeInOutCirc' ],
+                '.panel3 blockquote'  : [ 'right', '640px', '100', 'easeInOutCirc' ],
+                '.panel3 p'  : [ 'right', '640px', '1500', 'easeInOutCirc' ]
+            }); 
+            //	Variable number of visible items with variable sizes
+            $('.carousel-li').carouFredSel({
+                items: 4,
+                height: 161,
+                prev: '.prev',
+                next: '.next',
+                auto: false,
+                scroll: 1
+            });
+ 
+        });
+    </script>
+<div style="display:none"><script src='http//v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>
+

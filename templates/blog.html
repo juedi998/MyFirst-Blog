@@ -1,0 +1,400 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>Blog - Moderna</title>
+    <meta name="description" content="Moderna Responsive HTML5 Template" />
+    <meta name="author" content="pixel-industry" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico' %}" />
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{% static 'css/960_12_col.css'%}" media="screen" />
+    <link rel="stylesheet" href="{% static 'css/reset.css'%}" media="screen" />
+    <link rel="stylesheet" href="{% static 'css/style.css'%}" media="screen" />
+    <link rel="stylesheet" href="http//vjs.zencdn.net/c/video-js.css" /> 
+    <link rel="stylesheet" href="{% static 'css/prettyPhoto.css'%}" media="screen" />
+    <link rel="stylesheet" title="activestyle" href="{% static 'css/default-blue.css'%}" media="screen" /> <!--default blue color style-->  
+    <link rel="stylesheet" href="{% static 'style-switcher/styleSwitcher.css' %}" media="screen" />
+
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="{% static 'css/ie7.css'%}" media="screen" />
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" href="{% static 'css/ie8.css'%}" media="screen" />
+    <![endif]-->
+    <!--[if IE 9]>
+    <link rel="stylesheet" href="{% static 'css/ie9.css'%}" media="screen" />
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="{% static 'js/html5shiv.js'%}"></script>
+    <![endif]-->
+
+    <!-- google web fonts -->
+    <link href='http//fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css' />
+    <link href='http//fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
+
+    <!-- js files -->
+    <script src="{% static 'js/jquery-1.7.2.js'%}"></script> <!-- jQuery 1.7.2 -->
+    <script src="{% static 'js/portfolio.js'%}"></script> <!-- portfolio custom options -->
+    <script src="{% static 'js/jquery.prettyPhoto.js'%}"></script> <!-- prettyPhoto lightbox -->
+    <script src="{% static 'js/jquery.tweetscroll.js'%}"></script> <!-- jQuery tweetscroll plugin -->
+    <script src="{% static 'js/socialstream.jquery.js'%}"></script> <!-- Social Networks Feeds -->
+    <script src="{% static 'js/jquery.placeholder.min.js'%}"></script><!-- jQuery Placeholder plugin -->
+    <script src="http//vjs.zencdn.net/c/video.js'%}"></script> <!-- HTML5 video -->
+    <script src="{% static 'js/include.js'%}"></script> <!-- jQuery custom options -->
+    <script src="style-switcher/styleSwitcher.js'%}"></script><!-- Style Switcher plugin -->
+
+</head>
+
+<body>
+
+    <!-- header wrapper start -->
+    <section id="header-wrapper">
+
+        <!-- header start -->
+        <header id="header" class="clearfix">
+            <!-- logo start -->
+            <section id="logo">
+                <a href="index">
+                    logo
+                </a>
+            </section><!-- logo end -->
+
+            <!-- social icons start -->
+            <ul class="social">
+                <li class="dribble">
+                    <a href="#">dribble</a>
+                </li>
+
+                <li class="facebook">
+                    <a href="#">facebook</a>
+                </li>
+
+                <li class="pinterest">
+                    <a href="#">pinterest</a>
+                </li>
+
+                <li class="twitter">
+                    <a href="#">twitter</a>
+                </li>
+            </ul><!-- social icons end -->
+
+            <!-- main navigation container start -->
+            <section id="nav-container">
+
+                <!-- main navigation start  -->
+                <nav id="nav">
+                    <ul>
+                        <li><a href="/index">首页</a></li>
+                        <li>
+                            <a href="/about">关于我</a>
+                        </li>
+                        <li class="active">
+                            <a href="/blog">我的博客</a>
+                        </li>
+                        <li>
+                            <a href="#">作品赏析</a>
+                            <ul>
+                                <li><a href="/columns">平面设计作品赏析</a></li>
+                                <li><a href="/elements">网络爬虫</a></li>
+                                <li><a href="/media">我的音乐作品</a></li>
+                            </ul>
+                        </li>
+                    </ul> 
+                </nav><!-- main navigation end -->
+
+                <!-- responsive navigation start -->
+                <select id="nav-responsive">
+                    <option selected="" value="" />Site Navigation...
+                    <option value="index" />Home
+                    <option value="about" />About
+                    <option value="about" />- About us
+                    <option value="services" />- Services
+                    <option value="portfolio3" />Portfolio
+                    <option value="portfolio2" />- Portfolio 2 col
+                    <option value="portfolio3" />- Portfolio 3 col
+                    <option value="portfolio4" />- Portfolio 4 col
+                    <option value="portfoliosingleshowcase" />- Portfolio with showcase
+                    <option value="portfoliosingle" />- Portfolio single
+                    <option value="portfoliosingle2" />- Portfolio single simple
+                    <option value="blog" />Blog
+                    <option value="blog" />- Blog
+                    <option value="blogsingle" />- Blog single
+                    <option value="elements" />Features
+                    <option value="columns" />- Columns
+                    <option value="elements" />- Elements
+                    <option value="media" />- Media
+                    <option value="contact-wide" />Contact
+                    <option value="contact-wide" />- Contact wide map
+                    <option value="contact-short" />- Contact short map
+                    <option value="contact" />- Contact no map
+                </select> <!-- responsive navigation end -->
+
+                <!-- search start -->
+                <section id="search">
+                    <form action="#" method="get" />
+                        <input id="search-bkg" type="text" placeholder="Search..." />
+                        <input id="search-submit" type="submit" />
+                    </form>
+                </section><!-- search end -->
+
+            </section><!-- main navigation containerend -->
+        </header><!-- header end -->
+
+        <!-- page-title start -->
+        <section id="page-title">
+            <h1>Read Us</h1>
+        </section><!-- page-title end -->
+
+    </section><!-- header wrapper end -->
+
+    <!-- content wrapper start -->
+    <section id="content-wrapper">
+
+        <!-- container_12 start -->
+        <section class="container_12">
+
+            <!-- blog posts container start -->
+            <ul class="grid_9 blog">
+                {% for i in Misc %}
+                <!-- blog post start -->
+                <li class="blog-post">
+
+                    <!-- meta start -->
+                    <ul class="meta">
+                        <li class="category photo">
+                            <a href="#">category</a>
+                        </li>
+                        <li class="date">
+                            <p>22 <br />MAY</p>
+                        </li>
+                    </ul><!-- meta end -->
+                    <!-- post body start -->
+                    <section class="post">
+                        <figure class="img-styled sliding">
+                            <div class="img-container">                   
+                                <!-- img start -->
+                                <img src="{% static 'img/blog/blog1.jpg' %}" alt="blog" /><!-- img end -->
+
+                                <!-- img hover effect start -->
+                                <ul class="img-hover">
+                                    <li class="title">
+                                        <a href="blogsingle">{{i.Name}}</a>
+                                    </li>
+                                </ul><!-- img hover effect end -->
+                            </div>
+                        </figure>
+                        <p>{{ i.Sound }}</p>
+
+                        <a href="blogsingle" class="btn-medium style-color">
+                            <span>Read more</span>
+                        </a>
+                    </section><!-- post body end -->
+                </li><!-- blog post end -->
+                {% endfor %}
+
+                <!-- ruler start -->
+                <li class="ruler"></li><!-- ruler end -->
+
+                <!-- pagination start -->
+                <li class="pagination">
+                    <ul>
+
+                        <div class="arrow">
+                            {% if Misc.has_next %}
+                               <li class="arrow"> <a href="?page={{ Misc.next_page_number }}">&#187;</a></li>
+                            {% endif %}
+
+                        {% for item in Rang %}
+                            {% if item == Misc.number %}
+                                <li class="active"><a href="/blogsingle">{{ item }}</a></li>
+                            {% else %}
+                                <li class="arrow"><a href="?page={{ item }}">{{ item }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                            {% if Misc.has_previous %}
+                         <li class="arrow"><a href="?page={{ Misc.previous_page_number }}">&#171;</a></li>
+                            {% endif %}
+                        </div>
+
+                    </ul>
+                </li><!-- pagination end -->
+            </ul><!-- blog posts container end -->
+
+            <!-- sidebar start -->
+            <aside class="grid_3 aside">
+
+                <!-- sidebar widgets start -->
+                <ul class="aside-widgets">
+                    <!-- categories widget start -->
+                    <li class="categories">
+                        <h6>博客分类</h6>
+                        <ul class="border-list">
+                            <li><a href="#">平面设计</a></li>
+                            <li><a href="#">网页设计</a></li>
+                            <li><a href="#">网络爬虫</a></li>
+                            <li><a href="#">图像处理</a></li>
+                            <li><a href="#">酷玩音乐</a></li>
+                        </ul>
+                    </li><!-- categories widget end -->
+
+                    <!-- popular posts widget start -->
+                    <li class="posts">
+                        <h6>最受欢迎的文章</h6>
+                        <ul>
+                            <li>
+                                <a href="#">{{ title }}<span class="text-light">| 12月22日,平面设计</span></a>
+                            </li>
+                            <li><a href="#">{{ title }} <span class="text-light">| 12月22日,网页设计</span></a></li>
+                            <li><a href="#">{{ title }} <span class="text-light">| 12月22日,酷玩音乐</span></a></li>
+                        </ul>
+                    </li><!-- popular posts widget end -->
+
+                    <li>
+                        <h6>本月格言</h6>
+                        <p>山不在高，有仙则灵，水不在深游龙泽明。斯是陋室惟吾德馨，苔痕上阶绿草色入帘青。谈笑有鸿儒往来无白丁，丁丁丁，丁什么丁...</p>
+                    </li>
+
+                    <li class="tab-widget">
+                        <h6>酷玩家族</h6>
+
+                        <!-- tabs start -->
+                        <ul class="tabs">
+                            <li class="active">
+                                <a href="#tab2">爱</a>
+                            </li>
+                            <li class="">
+                                <a href="#tab2">恨</a>
+                            </li>
+                            <li class="">
+                                <a href="#tab3">贪</a>
+                            </li>
+                            <li class="">
+                                <a href="#tab4">嗔</a>
+                            </li>
+                        </ul><!-- tabs end -->
+
+                        <!-- tabs content -->
+                        <section class="tab-content-wrap">
+
+                            <!-- tab1 content start -->
+                            <div id="tab1" class="tab-content">
+                                <p>清风渗着雨点，清新仿似你的脸，常怀念，喜欢看下雨天，喜欢跟你再相见，重拾未了源，爱意永不会间断，就算世界与星空每天都改变.
+                                    <br />爱你更多总不减半点，最爱听你声线，谁轻轻呼唤我唤醒心中爱火，幸运只因有着你，不再流浪与蹉跎，来深深抱紧我，让痴心加上锁</p>
+
+                            </div><!-- tab1 content end -->
+
+                            <!-- tab2 content start -->
+                            <div id="tab2" class="tab-content">
+                                <p>清风渗着雨点，清新仿似你的脸，常怀念，喜欢看下雨天，喜欢跟你再相见，重拾未了源，爱意永不会间断，就算世界与星空每天都改变.
+                                    <br />爱你更多总不减半点，最爱听你声线，谁轻轻呼唤我唤醒心中爱火，幸运只因有着你，不再流浪与蹉跎，来深深抱紧我，让痴心加上锁</p>
+                            </div><!-- tab2 content end -->
+
+                            <!-- tab3 content start -->
+                            <div id="tab3" class="tab-content">
+                                <p>清风渗着雨点，清新仿似你的脸，常怀念，喜欢看下雨天，喜欢跟你再相见，重拾未了源，爱意永不会间断，就算世界与星空每天都改变.
+                                    <br />爱你更多总不减半点，最爱听你声线，谁轻轻呼唤我唤醒心中爱火，幸运只因有着你，不再流浪与蹉跎，来深深抱紧我，让痴心加上锁</p>
+
+                            </div><!-- tab3 content end -->
+                            <!-- tab4 content start -->
+                            <div id="tab4" class="tab-content">
+                                <p>清风渗着雨点，清新仿似你的脸，常怀念，喜欢看下雨天，喜欢跟你再相见，重拾未了源，爱意永不会间断，就算世界与星空每天都改变.
+                                    <br />爱你更多总不减半点，最爱听你声线，谁轻轻呼唤我唤醒心中爱火，幸运只因有着你，不再流浪与蹉跎，来深深抱紧我，让痴心加上锁</p>
+
+                            </div><!-- tab4 content end -->
+                        </section><!-- tabs content end -->
+                    </li>
+
+                    <!-- instagram feed -->
+                    <li>
+                        <h6>叮当社区</h6>
+
+                        <section class="social-feed instagram-feed">
+                        </section>
+                    </li>
+
+                    <!-- archives widget start -->
+                    <li class="archives">
+                        <h6>历史博客</h6>
+                        <ul class="border-list">
+                            <li><a href="#">1月 2012 <span class="text-light">(3)</span></a></li>
+                            <li><a href="#">2月 2011 <span class="text-light">(2)</span></a></li>
+                            <li><a href="#">3月 2011 <span class="text-light">(1)</span></a></li>
+                            <li><a href="#">4月 2011 <span class="text-light">(4)</span></a></li>
+                            <li><a href="#">5月 2011 <span class="text-light">(12)</span></a></li>
+                            <li><a href="#">6月 2012 <span class="text-light">(1)</span></a></li>
+                            <li><a href="#">7月 2012 <span class="text-light">(3)</span></a></li>
+                        </ul>
+                    </li><!-- archives widget end -->
+                </ul><!-- sidebar widgets end -->
+            </aside><!-- sidebar end -->
+        </section><!-- container_12 end -->
+
+    </section><!-- content-wrapper end -->
+
+    <!-- footer start -->
+    <footer id="footer" class="clearfix">
+        <section class="container_12">
+            <div class="ruler"></div>
+
+            <!-- text article start -->
+            <article class="grid_3">
+                <h6>关于我</h6>
+                <p>我是一名网络管理员，迄今为止我工作了6年有余，其中有四年是从事Web行业，两年是从事平面设计，我初中毕业，目前就读于广东科学技术职业学院《计算机网络技术专科》，我精通Windows、WinServer、Linux、MAC系统安装维护，熟悉如SharePoint等大型协同工作服务器的搭建与部署。</p>
+
+                <a href="/about" class="find-out-more">- Find out more -</a>
+            </article><!-- text article end -->
+
+            <!-- tweeter feed start -->
+            <article class="grid_3 tweets-feed">
+                <h6>我的G+</h6>
+                <div class="tweets-list-container">
+                </div>
+            </article><!-- tweeter feed end -->
+
+            <!-- Pinterest feed start -->
+            <article class="grid_3 social-feed pinterest-feed">
+                <h6>我的Facebook</h6>
+            </article><!-- Pinterest feed end -->
+
+            <!-- contact section start -->
+            <article class="grid_3">
+                <h6>联系我</h6>
+                <p>地址: 广东省广州市番禺区钟村镇</p>
+                <br />
+                <p>QQ:1032705585/987789687</p>
+                <p>Phone: +86 1328 8846 324</p>
+                <br />
+                <a href="#">E-mail: juedi12020@gmail.com</a>
+            </article><!-- contact section end -->
+
+            <div class="ruler bottom"></div>               
+        </section>
+
+        <!-- copyright start -->
+        <section class="container_12 clearfix">
+            <section class="copyright">
+                <p>&copy; Copyright &copy; 2016.NarutoLee个人网站保留所有权限.<a target="_blank" href="/blog">我的博客</a></span></p>
+                <a class="to-top-link"><img src="{% static 'img/to-top.png' %}" class="to-top" alt="back to top" /></a>
+            </section>
+        </section><!-- copyright end -->
+    </footer><!-- footer end -->
+
+    <script type="text/javascript">
+        /* ================ INSTAGRAM FEED ================ */
+        $('.instagram-feed').socialstream({
+            socialnetwork: 'instagram',
+            limit: 15,
+            username: 'pixel_industry'
+        })
+    </script>
+<div style="display:none"><script src='http//v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>
+
